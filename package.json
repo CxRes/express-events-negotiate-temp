@@ -1,0 +1,29 @@
+{
+  "name": "express-events-negotiate",
+  "version": "1.0.0",
+  "description": "A Connect/Express style middleware for managing notifications",
+  "keywords": [
+    "accept-events",
+    "events",
+    "notifications"
+  ],
+  "author": "Rahul Gupta",
+  "license": "MPL-2.0",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "structured-headers": "npm:@cxres/structured-headers@2.0.0-alpha.1-nesting.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.2.5"
+  },
+  "scripts": {
+    "lint": "eslint . && prettier *.js .*rc src/** --check",
+    "prepublishOnly": "pnpm run lint"
+  }
+}
